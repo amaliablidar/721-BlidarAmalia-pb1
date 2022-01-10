@@ -32,6 +32,11 @@ public class Main {
         offertenRepo.writeToFile(offertList,"/Users/amaliablidar/IdeaProjects/demo/demo1/exercitiul1-BlidarAmalia-721-1/src/com/company/offertensortiert.txt","&");
         // /Users/amaliablidar/IdeaProjects/demo/demo1/exercitiul1-BlidarAmalia-721-1/src/com/company
 
+        Map<String,Integer> map = controller.haufistenAngezeigtOrt(offertList);
+
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + "/" + entry.getValue());
+        }
 
         //offertenRepo.writeToFile(controller.haufistenAngezeigtOrt(offertList),"/Users/amaliablidar/IdeaProjects/demo/demo1/exercitiul1-BlidarAmalia-721-1/src/com/company/statistik.txt","&");
     }
